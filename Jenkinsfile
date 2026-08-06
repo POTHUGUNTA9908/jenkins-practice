@@ -1,9 +1,7 @@
 pipeline {
-    agent any
-
+    agent {label 'AGENT-1'}
     stages {
-
-        stage('Build') {
+       stage('Build') {
             steps {
                 script {
                     sh """
