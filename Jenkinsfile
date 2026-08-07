@@ -1,12 +1,15 @@
 pipeline {
-    agent {label 'AGENT-1'}
+    agent {
+        label 'AGENT-1'
+    }
+
     stages {
-       stage('Build') {
+        stage('Build') {
             steps {
                 script {
-                    sh """
+                    sh '''
                         echo "Hello, this is build"
-                    """
+                    '''
                 }
             }
         }
@@ -14,9 +17,9 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh """
+                    sh '''
                         echo "Hello, this is test"
-                    """
+                    '''
                 }
             }
         }
@@ -24,12 +27,11 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    sh """
+                    sh '''
                         echo "Hello, this is deploy"
-                    """
+                    '''
                 }
             }
         }
-
     }
 }
