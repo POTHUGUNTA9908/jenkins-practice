@@ -65,7 +65,7 @@ pipeline {
                 script {
                     sh """
                         echo "Hello, this is build"
-                        echo "project: $PROJECT"
+                        echo "PROJECT: $PROJECT"
                     """
                 }
             }
