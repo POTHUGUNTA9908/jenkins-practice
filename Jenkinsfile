@@ -58,7 +58,9 @@ pipeline {
            COMPONENT = 'BACKEND'
     }
     
-
+    options { 
+        disableConcurrentBuilds()
+         }
     stages {
 
         stage('Build') {
