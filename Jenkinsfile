@@ -52,6 +52,10 @@
 pipeline {
     agent {
         label 'AGENT-1'
+        environment { 
+           Project = 'EXPENSE'
+           Component = 'BACKEND'
+    }
     }
 
     stages {
@@ -61,6 +65,7 @@ pipeline {
                 script {
                     sh """
                         echo "Hello, this is build"
+                        echo "project: $PROJECT"
                     """
                 }
             }
