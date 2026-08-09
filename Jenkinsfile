@@ -28,20 +28,17 @@ pipeline {
                 }
             }
         }
-        post { 
-        always { 
+        post {
+        always {
             echo 'I will always say Hello again!'
         }
-    }
-    failure { 
-        always { 
+
+        failure {
             echo 'I will run when pipeline is failed!'
         }
-    }
-    success { 
-        always { 
+
+        success {
             echo 'I will run when pipeline is successful!'
         }
-    }
     }
 }
