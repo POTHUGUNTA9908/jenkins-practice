@@ -53,8 +53,8 @@ pipeline {
     agent {
         label 'AGENT-1'
         environment { 
-           Project = 'EXPENSE'
-           Component = 'BACKEND'
+           PROJECT = 'EXPENSE'
+           COMPONENT = 'BACKEND'
     }
     }
 
