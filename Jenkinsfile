@@ -81,6 +81,7 @@ pipeline {
                 script {
                     sh """
                         echo "Hello, this is deploy"
+                        afaf
                     """
                 }
             }
